@@ -4,12 +4,34 @@
     <section class="hero is-danger">
       <div class="hero-body">
         <p class="title">
-          맨체스터 유나이티드
+          <i class="fas fa-futbol"></i> 맨체스터 유나이티드
         </p>
         <p class="subtitle">
           Manchester United
         </p>
       </div>
     </section>
+     <section class="columns">
+      <div class="column">
+        <article class="message">
+          <div class="message-header">
+            <p>감독(Coach) 정보</p>
+          </div>
+          <div class="message-body">
+            <figure class="image is-128x128">
+              <img
+                src="https://w.namu.la/s/995da6e1ff826441964009a2fb3b0bb9fa668c443f6265718dbf6b60f619d908707946f038c2615cd6aad2cda94005e52c02584304ff60a88c04457e1bab1aca3cf97479ac12a40843843309e4fa048e28a6c28ca3164f807198716d8be640f4"
+                alt=""
+              />
+            </figure>
+            노르웨이의 축구선수 출신 감독. 2018년부터 맨체스터 유나이티드 FC 감독을 맡고 있다. 
+            
+            별명은 '동안의 암살자'. 슈퍼 서브라는 별명을 가진 맨체스터 유나이티드의 레전드. 등 번호인 20번에 이름인 'Ole'를 붙여서 '20LEGEND'로 불리기도 한다. 세계에서 가장 유명한 노르웨이인이란 소리도 들을 정도로 명성을 날린 축구선수이다. 굉장히 동안이라서 1996년 맨유에 입단했을 때, 라이언 긱스는 그가 선수라고는 생각하지 못하고 어린 팬이 연습장 구경을 허가받았거나 연습생인 줄로 생각했다고 한다. 심지어 축구계의 대표 노안 아르연 로번보다 11살 연상인데 아무리 봐도 로번이 연상으로 보인다.
+            
+            실력도 뛰어났지만 인격적으로도 훌륭한 선수로 동료와 팬들 사이에서 정평이 났으며 팀에 대한 헌신도 매우 뛰어나서 현역일 때는 물론이고 은퇴한 지금도 팬들에게 절대적인 사랑을 받고 있다. 오죽하면 구단에서 팬클럽에게 올드 트래포드에 공식적으로 걸 수 있는 현수막 수량을 2개로 지정했는데 그중 하나가 솔샤르의 응원 현수막일 정도다. 인상적인 골을 여럿 넣었지만 특히 트레블을 달성한 1999년 UEFA 챔피언스 리그 바이에른 뮌헨과의 결승전에서 추가 시간에 기록한 극적인 역전골과 노팅엄 포레스트와의 경기에서 교체 출전 11분 만에 4골을 넣은 것이 유명하다
+          </div>
+        </article>
+      </div>
+     </section>
   </div>
 </template>
