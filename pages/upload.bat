@@ -1,3 +1,3 @@
 git add --all
-git commit -m "start manchester united web site"
+git commit -m "manchester united web site add info"
 git push -u origin master

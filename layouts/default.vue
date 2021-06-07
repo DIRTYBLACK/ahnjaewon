@@ -3,7 +3,8 @@
     <nav class="breadcrumb">
       <ul>
         <li><nuxt-link to="/"><i class="fas fa-home"></i> 홈으로</nuxt-link></li>
-      </ul>
+        <li><nuxt-link to="/player"><i class="fas fa-file-signature"></i>&nbsp;선수단</nuxt-link></li>
+      </ul>      
     </nav>
     <nuxt/>
     <footer class="footer">
