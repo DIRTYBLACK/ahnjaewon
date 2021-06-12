@@ -38,7 +38,7 @@
   </div>
 </template>
 <script>
-import playerInfo from "~/assets/playerInfo.json";
+import playerInfo from "~/static/playerInfo.json";
 export default {
   data() {
     return {      

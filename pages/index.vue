@@ -20,7 +20,7 @@
           <div class="message-body">
             <figure class="image is-128x128">
               <img
-                src="https://w.namu.la/s/995da6e1ff826441964009a2fb3b0bb9fa668c443f6265718dbf6b60f619d908707946f038c2615cd6aad2cda94005e52c02584304ff60a88c04457e1bab1aca3cf97479ac12a40843843309e4fa048e28a6c28ca3164f807198716d8be640f4"
+                src="http://img77.dreamwiz.net/20190120/g/U/1/gU1zPpB_o.jpg"
                 alt=""
               />
             </figure>
