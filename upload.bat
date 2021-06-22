@@ -1,3 +1,3 @@
 git add --all
-git commit -m "change chart info"
+git commit -m "add pages"
 git push -u origin master

@@ -105,10 +105,6 @@
           </table>
         </article>
       </div>
-     </section>  
-         
-         
-     
- 
-  </div>
+     </section>        
+   </div>
 </template>
