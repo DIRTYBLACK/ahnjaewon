@@ -1,6 +1,12 @@
 # ahnjaewon
 
-> ahnjaewon's cloud wen server
+> 안재원의 맨체스터 유나이티드 홈페이지
+
+# Domain Web Server
+
+> https://www.ahnjaewon.tk/
+
+> https://quizzical-fermi-2db691.netlify.app/legends
 
 ## Build Setup
 
