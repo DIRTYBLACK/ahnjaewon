@@ -6,7 +6,7 @@
 					<i class="fas fa-futbol"></i> 맨체스터 유나이티드의 역대 성적					
 				</p>
 				<p class="subtile">
-					맨체스터 유나이티드의 역대 성적 통계를 시각적으로 보여줍니다.
+					맨체스터 유나이티드의 이적료 통계를 시각적으로 보여줍니다.
 				</p>
 			</div>
 		</section>
@@ -15,7 +15,7 @@
 			<div class="column">
 				<article class="message">
 					<div class="message-header">
-						월평균 애완동물 양육비
+						역대 순위
 					</div>
 					<div class="message-body">
 						<div
@@ -24,8 +24,8 @@
 						></div>
 						<div class="content">
 							<p class="tag is-danger">출처</p>
-							<a href="http://www.koreadognews.co.kr/news/view.php?no=1366">
-								한국애견신문</a
+							<a href="https://www.manutd.com/ko">
+								맨체스터 유나이티드 공식 홈페이지</a
 							>
 						</div>
 					</div>
@@ -34,14 +34,14 @@
 			<div class="column">
 				<article class="message">
 					<div class="message-header">
-						개 양육 시작연도
+						이적료 순위
 					</div>
 					<div class="message-body">
 						<div id="pieChart" style="width:100%;height:400px"></div>
 						<div class="content">
 							<p class="tag is-danger">출처</p>
-							<a href="http://www.koreadognews.co.kr/news/view.php?no=1366">
-								한국애견신문</a
+							<a href="https://www.manutd.com/ko">
+								맨체스터 유나이티드 공식 홈페이지</a
 							>
 						</div>
 					</div>
@@ -53,57 +53,83 @@
 <script>
 	import toastuiChart from '~/plugins/toastuiChart';
 	let showChart = false;
-	const dogCaringMoney = {
+	const playerMoney = {
 		categories: [
-			'5만원 미만',
-			'5~10만원',
-			'10~15만원',
-			'15만원 초과',
-			'무응답',
+			'06-07 시즌',
+			'07-08 시즌',
+			'08-09 시즌',
+			'09-10 시즌',
+			'10-11 시즌',
+			'11-12 시즌',
+			'12-13 시즌',
+			'13-14 시즌',
+			'14-15 시즌',
+			'15-16 시즌',
+			'16-17 시즌',
+			'17-18 시즌',
+			'18-19 시즌',
+			'19-20 시즌',
+			'20-21 시즌',
 		], // y-axis
 		series: [
 			// x-axis
 			{
-				name: '전체(%)',
-				data: [20.2, 24.4, 19.7, 22.0, 13.6],
+				name: '프리미어리그',
+				data: [1, 1, 1, 2, 1, 2, 1, 7, 4, 5, 6, 2, 6, 3, 2],
 			},
 			{
-				name: '남자(%)',
-				data: [19.7, 23.4, 17.7, 23.6, 15.6],
+				name: '챔피언스리그',
+				data: [4, 1, 2, 8, 2, 32, 16, 0, 0, 0, 0, 16, 8, 0, 32],
 			},
 			{
-				name: '여자(%)',
-				data: [20.7, 25.3, 21.5, 20.7, 11.9],
+				name: '유로파리그',
+				data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 4, 2],
 			},
+			{
+				name: 'FA 컵',
+				data: [2, 0, 3, 0, 3, 8, 8, 32, 0, 0,8 , 2, 8, 4, 8],
+			}	
 		],
 	};
-	const dogStartYear = {
-		categories: ['시작연도'],
+	const Money = {
+		categories: ['이적료'],
 		series: [
 			{
-				name: '2000년 이전',
-				data: 11.3,
+				name: '폴 포그바',
+				data: 105.0,
 			},
 			{
-				name: '2000~2004년',
-				data: 12.2,
+				name: '해리 매과이어',
+				data: 87.0,
 			},
 			{
-				name: '2005~2009년',
-				data: 12.9,
+				name: '로멜루 루카쿠',
+				data: 84.7,
 			},
 			{
-				name: '2010~2014년',
-				data: 28.3,
+				name: '앙헬 디 마리아',
+				data: 75.0,
 			},
 			{
-				name: '2015년 이후',
-				data: 28.3,
+				name: '앙토니 마샬',
+				data: 60.0,
 			},
 			{
-				name: '무응답',
-				data: 7.0,
+				name: '프레드',
+				data: 59.0,
 			},
+			{
+				name: '아론 완-비사카',
+				data: 55.0,
+			},
+			{
+				name: '리오 퍼디난드',
+				data: 46.0,
+			},
+			{
+				name: '후안 마타',
+				data: 44.7,
+			},			
 		],
 	};
 	export default {
@@ -112,8 +138,8 @@
 		},
 		mounted() {
 			if (!showChart && process.client) {
-				if (!toastuiChart('bar', 'lineChart', dogCaringMoney)) return;
-				if (!toastuiChart('pie', 'pieChart', dogStartYear)) return;
+				if (!toastuiChart('bar', 'lineChart', playerMoney)) return;
+				if (!toastuiChart('pie', 'pieChart', Money)) return;
 				showChart = true;
 			}
 		},

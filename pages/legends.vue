@@ -50,23 +50,63 @@
             <a
                class="button is-primary is-small"
                href="https://raw.githubusercontent.com/DIRTYBLACK/ahnjaewon/master/static/legendInfo.json"
-               >all list</a
-            >
+               >all list</a>
          </div>
-      </div>
-      <div class="column"></div>
+      </div>      
+      <div class="column">
+				<article class="message is-primary">
+					<div class="message-header">오늘의 선수</div>
+					<div class="message-body">
+						<div class="content">
+							맨체스터를 빛낸 오늘의 선수는 누굴까요?
+							<button class="button is-warning" @click="showPlayerName">
+								선수명?
+							</button>
+						</div>
+						<figure class="image container">
+							<img :src="playerImageUrl" alt="" />
+						</figure>
+					</div>
+				</article>
+			</div>
    </div>
 </template>
 <script>
    import axios from 'axios';
    export default {
+		data() {
+			const colors = [
+				'is-white',
+				'is-primary',
+				'is-link',
+				'is-info',
+				'is-success',
+				'is-warning',
+				'is-danger',
+			];
+			return {
+				playerNameField: 'playerName',
+				colors: colors,
+				colorSize: colors.length,
+			};
+		},
       async asyncData() {
          const legends = await axios.get('https://raw.githubusercontent.com/DIRTYBLACK/ahnjaewon/master/static/legendInfo.json');
+         const randomImg = await axios.get('https://dog.ceo/api/breeds/image/random');
          //alert(Object.keys(legends));
          return {
             tablelegends: legends.data.message,
             tablelegendsKeys: Object.keys(legends.data.message),
+            dogImageUrl: randomImg.data.message,
          };
       },
+      methods: {
+			showPlayerName() {
+				let urlArray = this.playerImageUrl.split('/');
+				let playerName = urlArray[urlArray.length - 2].toUpperCase();
+				alert('저는 ' + playerName + '입니다.');
+			},
+			
+		},
    };
 </script>
