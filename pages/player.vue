@@ -11,6 +11,15 @@
       </div>
     </section>
     <hr />
+    <section class="img">
+      <div class="ing-body">
+         <figure class="image is-130x130">
+              <img src="~/assets/player.png" alt />
+          </figure>
+      </div>
+    </section>
+        <hr />    
+        <hr />
     <section class="columns">
       <div class="column">
         <table class="table is-striped is-hoverable is-fullwidth">

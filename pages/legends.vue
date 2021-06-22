@@ -9,6 +9,15 @@
          </div>
       </section>
       <hr />
+      <section class="img">
+      <div class="ing-body">
+         <figure class="image is-130x130">
+              <img src="~/assets/legend.jpg" alt />
+          </figure>
+      </div>
+    </section>
+        <hr />    
+        <hr />
       <section class="columns"></section>
       <div class="column">
          <table class="table">
@@ -64,7 +73,7 @@
 							</button>
 						</div>
 						<figure class="image container">
-							<img :src="playerImageUrl" alt="" />
+							<!-- <img :src="playerImageUrl" alt="" /> -->
 						</figure>
 					</div>
 				</article>
@@ -102,7 +111,7 @@
       },
       methods: {
 			showPlayerName() {
-				let urlArray = this.playerImageUrl.split('/');
+				//let urlArray = this.playerImageUrl.split('/');
 				let playerName = urlArray[urlArray.length - 2].toUpperCase();
 				alert('저는 ' + playerName + '입니다.');
 			},

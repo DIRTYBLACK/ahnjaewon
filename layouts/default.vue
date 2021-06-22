@@ -6,6 +6,7 @@
         <li><nuxt-link to="/player"><i class="fas fa-file-signature"></i>&nbsp;선수단</nuxt-link></li>
         <li><nuxt-link to="/legends"><i class="fas fa-globe-americas"></i>&nbsp;레전드 선수들</nuxt-link></li>
         <li><nuxt-link to="/chart"><i class="fas fa-chart-bar"></i>&nbsp;역대 성적</nuxt-link></li>
+        <li><nuxt-link to="/News"><i class="fas fa-database"></i>&nbsp;뉴스</nuxt-link></li>
       </ul>      
     </nav>
     <nuxt/>

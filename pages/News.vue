@@ -3,10 +3,10 @@
     <section class="hero is-danger">
       <div class="hero-body">
         <p class="title">
-          <i class="fas fa-futbol"></i> 맨체스터 유나이티드
+          <i class="fas fa-futbol"></i> 맨유 뉴스
         </p>
         <p class="subtitle">
-          Manchester United
+          맨체스터 유나이티드의 새로운 소식들입니다.
         </p>
       </div>
     </section>
@@ -105,10 +105,6 @@
           </table>
         </article>
       </div>
-     </section>  
-         
-         
-     
- 
-  </div>
+     </section>      
+   </div>
 </template>
