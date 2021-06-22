@@ -6,7 +6,7 @@
 
 > https://www.ahnjaewon.tk/
 
-> https://quizzical-fermi-2db691.netlify.app/legends
+> https://quizzical-fermi-2db691.netlify.app/
 
 ## Build Setup
 
